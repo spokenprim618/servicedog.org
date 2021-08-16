@@ -2,12 +2,11 @@ let dogurl = "https://dog.ceo/api/breeds/image/random";
 let total = 4;
 let count = 0;
 var slideIndex = 1;
-let size = window.innerHeight.toString() + "px";
-console.log(window.innerHeight);
+let size = window;
 document.getElementById("plaximg").style.minHeight = size;
-async function loadImages() {
+function loadImages() {
   for (i = 0; i < total; i++) {
-    await fetch(dogurl)
+     fetch(dogurl)
       .then(function (response) {
         return response.json();
       })
@@ -18,16 +17,10 @@ async function loadImages() {
         dogo.width = 200;
         dogo.height = 200;
         document.getElementById("slideshow").innerHTML +=
-          '<div class="mySlides fade"> <div class="numbertext">' +
-          count +
-          " / " +
-          total +
-          "</div><img src=" +
-          dogo.src +
-          ' style="width: 100%; min-height: 600px" /></div>';
+          '<div class="mySlides fade"> <div class="numbertext">' +count + " / " +total +"</div><img src=" + dogo.src +' style="width: 100%; min-height: 600px" /></div>';
       });
+    }
   }
-}
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");

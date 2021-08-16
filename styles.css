@@ -1,4 +1,6 @@
-* { margin:0;  box-sizing:border-box; }
+* { 
+  margin:0;  box-sizing:border-box; 
+}
 h1 {
   color: black;
   text-align:center;
@@ -92,7 +94,9 @@ h4 {
 body{ 
     background-color:rgb(252, 165, 122) ;
 }
- 
+#margin{
+  margin-bottom: 5px;
+} 
 #about-us {
     margin-bottom:none;
     margin-top:none;
@@ -105,6 +109,7 @@ body{
     padding-top:10px;
     padding-bottom:10px;
     margin-bottom: 10px;
+    text-align:center;
 }
 
 #more-info>a>p {
@@ -114,9 +119,6 @@ body{
     color:black;
     text-decoration:underline;
 } 
-* {
-  box-sizing: border-box;
-}
 
 h2 {
   display:flex;
@@ -221,26 +223,37 @@ h2 {
   text-align: center;
   color: white;
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 @font-face {
   font-family: Nexa;
   src: url(Nexa_Bold.otf);
 }
 .parallax {
-  /* The image used */
   background-image: url("images/dog.jpg");
-
-  /* Set a specific height */
   min-height: 1000px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.text-style{
+font-size: 100px;
+   color: white; 
+   font-family: Nexa;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-style2{
+  font-size: 20px; 
+  color: white; 
+  font-family: Nexa; 
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
