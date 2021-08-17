@@ -4,61 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.D.I - Dog Importance</title>
+    <title>SDOG - Dog Importance</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/big.png">
 </head>
 <body>
         <div class="toolbar">
-        <img id="Pic" src="https://img1.wsimg.com/isteam/ip/49830582-d885-4f14-bf71-0202ba607425/LSD%20LOGO.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25">
-        <a  href="trainingCare.html"><div id="text">Dog Care/training</div></a>
-        <a href="aquire.html"><div id="text2">How to Aquire</div></a>
-        <a  href="index.html"><div id="text3">Home</div></a>
+        <img id="Pic" src="https://img1.wsimg.com/isteam/ip/49830582-d885-4f14-bf71-0202ba607425/LSD%20LOGO.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" style="margin: 0;">
+        <a href="trainingCare.html" class="toolbarText"><div id="text">Dog Care/Training</div></a>
+        <a href="aquire.html" class="toolbarText"><div id="text2">How to Aquire</div></a>
+        <a  href="index.html" class="toolbarText"><div id="text3">Home</div></a>
     </div> 
     <!-- Replace Comments with Content -->
     <h1>
-        SDog Importance
+        Service Dog Importance
     </h1>
-    <br>
-    <p>
-       
+       <div style="text-align: center;"><button class="button" onclick="scrollToId('ESA')">Scroll To Resources</button></div>
     <h2>
         <!-- Method/SubTitle 1 -->
     </h2>
-    <p>
-        You may be asking yourself, why a service dog? Well let us tell you! Service dogs will serve as your trustly compaint 
-    </p>
-        <h2>
-        <!-- Method/SubTitle 2 -->
-    </h2>
-    <p>
-        <!-- Paragraph about Subtitle -->
-    </p>
+    
+    <p id="ImportanceText">You may be asking yourself, why a service dog? Well let us tell you! Service dogs will serve as your trusty compantion that will always stay by your side just like a normal dog but they will also assist you anything reguarding your disability or issues. It helps to have them besides you weather you don't have any physical tools or in the absense of other people.</p>
     <br>
-<h2>
-     
-</h2>
-<ul>
-    <li>
-        <!-- List resources Here -->
-    </li>
-</ul>
+    <div id="train" style="font-size: 20px">
+        <h2>Why physical service animals are important</h2>
+        <p>
+            Physical service dogs are for people with physical disabilities wheather it be people in a wheelchair or someone who is blind. They are capable of performing tasks such as:
+            <ol style="font-size:20px">
+                <li> 1. Pushing door buttons.</li>
+                <li> 2. Flipping light switches</li>
+                <li> 3. Picking up dropped items</li>
+                <li> 4. Retrieving phone for emergancy use and much more!</li>
+            </ol>
+        </p> There are certain catagories of dogs that meet specific needs. There are guide dogs that help the bland and visually impaired, the opposide of that would be Hearing dogs that will alert their deaf compantion to any important sounds. Mobility dogs help those who use wheelchairs or have trouple balancing. Medical alrt dogs will aid in case of any medical emergancys such as seizure's or low blood sugar.
+    </div>
+    <br>
+        <img src="images/help.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+        <br>
+<div id="Service-Dog">
+    <h2>Why Emotional Service Animals Are Important </h2>
+    <p>Emotional service dogs may sound un-important at first, but roughly 18% of Americans live with a emotional/mental disability, that can benifit from a 
+        Emotional Service Animal(ESA). Mental health professionals perscribe ESAs to many people living with disablilities and illnesses. They can help with a wide array of illnesses like depression, anxiety, and PTSD. But they can also help people of all ages living with ADHD and autism. You may also ask how these animals help with such things. Well first off, they provide unconditional love and attention to their owners. They can also give owners a feeling of purpose  and responsibility, Taking care of an animal can provide a great deal of self worth that can be invaluable to get motivated and be productive when they need it. They can also provide comfort when you need it. For example, if you are anxious about getting on a flight, an ESA can provide comfort when needed. In conclusion, ESAs can make best friends to the people who need it, almost being like a furry side kick, or a sholder to cry on.</p>
+</div>
+<br>
+    <img src="images/happy.jpg" height="500px" width="800px" style="display: block; margin-left: auto; margin-right: auto;">  
+
+<div id="Imp-Rescource">
+    <h2>Resources</h2>
+    <ul id="Importance-Resources">
+    <li><a href="https://ocvetmedcenter.com/news/service-dogs-important-community/" target="_blank">Click Here</a> to read in depth about the importance of service dogs</li>
+    <li><a href="https://k94life.org/programs/benefits-service-dogs/#:~:text=Service%20dogs%20support%20people%E2%80%99s%20physical%20disabilities%20in%20a,standing%2C%20walking%20or%20transferring%20out%20of%20a%20wheelchair." target="_blank">Click here</a> to know more about the part service dogs play</li>
+    <li><a id="ESA" href="https://www.servicedogcertifications.org/esa-provide-emotional-support/" target="_blank">Click Here</a> To learn about Emotional Service Animals(ESAs) and Discover more</li>
+    <li><a href="https://assistancedogregistry.com/service-dog-information/" target="_blank">Click Here</a> To learn about physical Service Animals</li>
+    <li><a href="https://www.akc.org/expert-advice/training/service-dog-training-101/" target="_blank">Click Here</a> To learn about service dogs 101</li>
+    </ul>
+</div>
 </body>
 <style>
-    h1{
-        text-align: center;
-    }
+   
     p{
-        text-align: center
+        text-align: center;
+        font-size: 20px;
         
     }
-    ul{
-        text-align: center
-    }
-    li{
-       text-align: center
-       
-    }
-    h2{
-        text-align: center
+    img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
+<script>
+    function scrollToId(id){
+        document.getElementById(id).scrollIntoView({behavior: "smooth"})
+    }
+</script>
