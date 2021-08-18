@@ -1,5 +1,5 @@
 * { 
-  margin:0;  box-sizing:border-box; 
+  margin:10;
 }
 hr {
   width: 1300px;
@@ -47,24 +47,24 @@ ul{
 }
 
 #text:hover{
-     color: gray;
-     opacity:0.5; 
-     text-decoration: underline;
+     color:white;
+     background-color: black;
+     border-radius: 10px;
  }
 #text2:hover{
-     color: gray;
-     opacity:0.5; 
-     text-decoration: underline;
+     color: white;
+background-color: black;
+     border-radius: 10px;
  }
 #text3:hover{
-     color: gray;
-     opacity:0.5; 
-     text-decoration: underline;
+     color: white;
+    background-color: black;
+     border-radius: 10px;
  }
 #text4:hover{
-     color: gray;
-     opacity:0.5; 
-     text-decoration: underline;
+     color: white;
+ 
+     border-radius: 10px;
  }
 
 #art:hover{
@@ -78,16 +78,13 @@ ul{
      text-decoration: none;
  }
 
- #Pic {
-        height: 70px;
-        width: 75px;
-    }
+
  
 .toolbar{
-    background-color: black ;
-    display:flex;
+    background-color: rgb(80, 193, 231);
+    display:flex ;
     align-content: center;
-    justify-content:space-evenly;
+    justify-content:space-around;
     padding:2px;
 }
 .toolbarText{
@@ -95,38 +92,40 @@ ul{
   margin-bottom: auto;
 }
 #text{
-    color:white;
-    font-size: 30px;
+    color:black;
+    font-size: 20px;
     font-family: Nexa;
     margin-top: auto; 
     margin-bottom: auto;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 #text2{
-    color:white;
-    font-size: 30px;
+    color: black;
+    font-size: 20px;
     font-family: Nexa;
     margin-top: auto; 
     margin-bottom: auto;
+    border: 2px solid rgb(0, 0, 0);
 }
  
 #text3{
-    color:white;
-    font-size: 30px;
+    color:black;
+    font-size: 20px;
     font-family: Nexa;
     margin-top: auto; 
     margin-bottom: auto;
+    border: 2px solid rgb(0, 0, 0);
 }
 #text4{
-    color:white;
-    font-size: 30px;
+    color:black;
+    font-size: 20px;
     font-family: Nexa;
     margin-top: auto; 
     margin-bottom: auto;
+    border: px solid rgb(0, 0, 0);
 } 
-body{ 
-    background-color:rgb(252, 165, 122);
-}
+
 #margin{
   margin-bottom: 5px;
 } 
@@ -135,9 +134,8 @@ body{
     font-size:18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     border-radius:8px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align:center;
-    border: 8px solid #FCB794;
     justify-content: center;
     margin-left: 110px;
     margin-right: 110px;
@@ -147,21 +145,22 @@ body{
     font-size:28px;
     color:black;
     text-decoration:underline;
-    background-color: #FCB794;
+    background-color: white;
 }
 #MoreLinks {
-  border: 8px solid #FCB794
-  background-color #FCB794;
+  background-color: white;
   margin-left: 130px;
   margin-right: 130px;
+  padding: none;
+  margin-top: none;
+  margin-bottom: none;
 }
 
 #Resources {
     color:black;
     font-size:20px;
-    background-color: #FCB794;
-    border-radius:8px;
-    padding:3px;
+    background-color: white;
+    border:none;
 }
 
 /* Slideshow container */
@@ -289,42 +288,41 @@ font-size: 100px;
 }
 
 #Care-Resources {
-  background-color: #FCB794;
+  background-color: rgb(80, 193, 231);
+  border:0px;
 }
 
 #Importance-Resources {
-  background-color: #FCB794;
+  background-color: white;
 }
 #aquire-resources {
-  background-color: #FCB794;
+  background-color: white;
 }
 
 #places {
-  background-color: #FCB794;
+  background-color: white;
 }
 
 #care {
-  border: 8px solid #FCB794;
+  border: 8px solid rgb(80, 193, 231);
   text-align: center;
   margin-left: 130px;
   margin-right: 130px;
 }
 
 #train {
-  border: 8px solid #FCB794;
   text-align: center;
   margin-left: 110px;
   margin-right: 110px;
 }
 
 #Service-Dog {
-  border: 8px solid #FCB794;
   text-align: center;
   margin-left: 130px;
   margin-right: 130px;
 }
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: rgb(80, 193, 231); /* Blue */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -336,48 +334,116 @@ font-size: 100px;
 }
 
 #Adopt {
-  border: 8px solid #FCB794;
-  background-color: #FCB794;
+  border: 8px solid rgb(80, 193, 231);
+  background-color: white;
   text-align:center;
   margin-left: 130px;
   margin-right: 130px;
 }
 
 #RU {
-  border: 8px solid #FCB794;
   text-align: center;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 #NYC {
-  border: 8px solid #FCB794;
-  background-color: #FCB794;
+  border: 2px solid rgb(80, 193, 231);
+  background-color: rgb(80, 193, 231);
   text-align: center;
   margin-left: 250px;
   margin-right: 250px;
+  padding: none;
 }
 
 #Resources-used {
-  border: 8px solid rgb(252, 165, 122);
-  background-color: #FCB794;
+  border: 8px solid rgb(80, 193, 231);
+  background-color: rgb(80, 193, 231);
   text-align: center;
   margin-left: 130px;
   margin-right: 130px;
 }
 
 #Imp-Resource {
-  border: 8px solid rgb(252, 165, 122);
-  background-color: #FCB794;
   text-align: center;
   margin-left: 130px;
   margin-right: 130px;
 }
 
 #ImportanceText {
-  border: 8px solid #FCB794;
-  background-color: #FCB794;
+  background-color: white;
   text-align: center;
   margin-left: 60px;
   margin-right: 60px;
 }
+body{
+  background-color: white;
+}
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+main-color: rgb(80, 193, 231);
+
+body{
+  background:#000;
+  vertical-align:middle;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  height:100%;
+}
+#primary{
+  position:absolute;
+  top:0;
+  margin:auto;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  li{
+    margin:0 20px;
+    position:relative;
+    a{
+      text-decoration:none;
+      display:block;
+      padding:5px 0;
+      font-family:'Open Sans';
+      font-size:26px;
+      line-height:1;
+      font-weight:bold;
+      position:relative;
+      z-index:1;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(
+          to right,
+          $main-color,
+          $main-color 50%,
+          #fff 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      transition: all 0.3s ease-in-out;
+      &:before{
+        display:block;
+        content:'';
+        width:0;
+        height:3px;
+        bottom:5px;
+        left:0;
+        bottom:-3px;
+        z-index:0;
+        position:absolute;
+        background:$main-color;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover{
+        background-position: 0%;
+        &:before{
+          width:100%;
+        }
+      }
+    }
+  }
+} */

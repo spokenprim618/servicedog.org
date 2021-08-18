@@ -14,8 +14,8 @@ async function loadImages() {
         let dogo = document.createElement("img");
         count += 1;
         dogo.src = myJson.message;
-        dogo.width = 200;
-        dogo.height = 200;
+        dogo.style.width = "auto";
+        dogo.style.height = "200";
         document.getElementById("slideshow").innerHTML +=
           '<div class="mySlides fade"> <div class="numbertext">' + count + " / " + total + "</div><img src=" + dogo.src + ' style="width: 100%; min-height: 600px" /></div>';
       });
