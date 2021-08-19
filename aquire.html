@@ -42,9 +42,50 @@
             <p>5. Your phone number</p>
             <p>6. Everyone in the household</p>
             </ul>
-            <hr style="margin-bottom: 5px;">
+            <hr id="margin">
 
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <button class = "BUTT" onclick="MapLook(40.71881560133056,-73.99906227307692,18 )">Animal Haven</button>  
+<button class = "BUTT" onclick="MapLook( 40.64824028362788, -73.97817773596418 , 18)">Sean Casey Animal Rescue</button>  
+<button class = "BUTT"onclick="MapLook(40.745784564364776, -73.97071521233549,18)">Bide-A-Wee</button>  
+<button class = "BUTT"onclick="MapLook(40.71600193242578, -73.96371183059354, 18)">Brooklyn Animal Resource Coalition</button>  
+<button class = "BUTT"onclick="MapLook(40.72749097358334, -73.9829520441442118, 18)">Social Tees Animal Rescue</button>  
+<button class = "BUTT"onclick="MapLook(40.76435603565517, -73.97176878375645, 18)">Woof Dog Rescue</button>  
+ 
+  
+<div style="width: 50px; height:50px;"></div>
+<div id="map" style="width: 500px; height:500px; transform: translate(590px,950px);"></div>
+<br>    
     <p>
         The dog might not be fertile due to it being spayed or neutered unless specifically asked for it not to be. Adoption fees $25-$500 can be higher if it's a younger dog and you can have no adoption fees if it's a senior dog, registration is $29, insurance depends on the policy, dog breed, and age. 
     </p>
@@ -60,8 +101,19 @@
     <p>7.Your home is ready for home visits by Adoption Agencies</p>
     <p>8.Your home is ready for the pet to be comfortable</p>
     
-    
-   
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%;}
+</style>
+
+
+
+
+
+
+
 <br>
 <div id="RU">
     <h2>Resources Used</h2>
@@ -85,8 +137,9 @@
 </ul>
 </div>
 <br>
-<div id="NYC">
 <h3>Pet Stores in and around NYC </h3>
+<div id="NYC">
+
 <ul id="places">
     <li><a href="https://www.nymetroparents.com/article/pet-stores-nyc#brooklyn" target="_blank">Pet Stores</a> in Brooklyn </li>
     <li><a href="https://www.nymetroparents.com/article/pet-stores-nyc#manhattan" target="_blank">Pet Stores</a> in Manhattan </li>
@@ -97,7 +150,8 @@
     <li><a href="https://www.nymetroparents.com/article/pet-stores-nyc#bergen" target="_blank">Pet Stores</a> in Bergen County </li>
 </ul>
 </div>
-</body>
+
+
 <style>
     
     h2 {
@@ -110,9 +164,56 @@
         text-align: center; 
         font-size: 23px;
     }
+    .BUTT{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;   
+    }
 </style>
 <script>
     function scrollToId(id){
         document.getElementById(id).scrollIntoView({behavior: "smooth"})
     }
 </script>
+
+<script>
+
+	mapboxgl.accessToken = 'pk.eyJ1IjoibGlsYW50cmF5IiwiYSI6ImNrc2k3djQ1MzIxY2Mybm5ydjhnMHpqMHoifQ.M78hI-ZI-7ujmep9jOD6Ag';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-73.97443915263187,  40.73715463676148], // starting position [lng, lat]
+zoom: 10 // starting zoom
+});
+console.log("yo")
+let Locations = [{lat: 40.72749097358334, lon:-73.9829520441442118, Name: "Social Tees Animal Rescue", Link: "https://www.google.com/maps/place/Social+Tees+Animal+Rescue+Office/@40.7276299,-73.9841123,18.38z/data=!4m9!1m2!2m1!1sSocial+Tees+Animal+Rescue+map!3m5!1s0x89c2598346600c2d:0xb385699ba71beacb!8m2!3d40.7274969!4d-73.9829537!15sCh1Tb2NpYWwgVGVlcyBBbmltYWwgUmVzY3VlIG1hcJIBFWFuaW1hbF9yZXNjdWVfc2VydmljZQ"},
+    {lat: 40.71881560133056, lon:-73.99906227307692, Name: "Animal Haven", Link:"https://www.google.com/maps/place/Animal+Haven/@40.7188178,-74.0012553,17z/data=!3m2!4b1!5s0x89c259a1cc1d9149:0xa4402598cfa72895!4m5!3m4!1s0x89c25989c192f425:0x1deaf94b68489dc2!8m2!3d40.7188138!4d-73.9990613"},
+    {lat: 40.745784564364776, lon: -73.97071521233549, Name:"Bide-A-Wee", Link:"https://www.google.com/maps/place/Bideawee/@40.7458096,-73.9708563,21z/data=!3m1!5s0x89c2591ad3821763:0xc352a33ac3d40816!4m13!1m7!3m6!1s0x89c2591ad6236d2d:0x9dfe8cc1f308226c!2s499+E+38th+St,+New+York,+NY+10016!3b1!8m2!3d40.7457793!4d-73.9704283!3m4!1s0x89c2591ad5ba2f41:0x45d09545d760cf4f!8m2!3d40.7457844!4d-73.9707144"},
+    {lat:40.76435603565517, lon: -73.97176878375645, Name: "Woof Dog Rescue", Link:"https://www.google.com/maps/place/Woof+Dog+Rescue,+Inc./@40.7642865,-73.9718349,21z/data=!4m5!3m4!1s0x89c25967d274961f:0x35fa1e1eb22b17a9!8m2!3d40.7643025!4d-73.9717568"}, 
+    {lat: 40.71600193242578, lon: -73.96371183059354, Name: "Brooklyn Animal Resource Coalition", Link:"https://www.google.com/maps/place/BARC+Shelter/@40.716002,-73.9658997,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2596114a0ae5f:0xb45417818d492155!8m2!3d40.716002!4d-73.963711"},
+    {lat: 40.64824028362788, lon:-73.97817773596418, Name: "Sean Casey Animal Rescue", Link:"https://www.google.com/maps/place/Sean+Casey+Animal+Rescue/@40.6482426,-73.9803715,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25b268b9375f5:0xd07bb046cb083600!8m2!3d40.6482373!4d-73.9782027"},
+    
+]
+for(let i = 0; i in Locations; i ++){const marker = new mapboxgl.Marker({
+color: "#FFFFFF",
+draggable: false
+}).setLngLat([ Locations[i].lon, Locations[i].lat])
+.addTo(map)
+.setPopup(
+    new mapboxgl.Popup().setHTML("<h1>" + Locations[i].Name + "</h1>" + "<a href='" + Locations[i].Link + "' target='_blank' style='text-allign: center;' >View " + Locations[i].Name + " On Google Maps </a>")
+)}
+function MapLook(lattitude, longitude, zoom){
+    if(!zoom){
+        let zoom = 9
+    }
+    map.jumpTo({
+        center: [longitude, lattitude],
+        zoom: zoom,
+        pitch: 45,
+        bearing: 90
+    })
+}
+</script>
+</body>
+</html>
